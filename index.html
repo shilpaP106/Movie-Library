@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="./script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <h1>Movie list</h1>
+    <label>Title</label>
+    <input type="text" id="title" placeholder="Enter movie title">
+    <label>Genre</label>
+    <input type="text" id="genre" placeholder="Enter movie genre">
+    <button id="search">Search</button>
+    <button onclick="sortByTitle()">sort by title</button>
+    <button onclick="sortByGenre()">sort by genre</button>
+    <ul id="results"></ul>
+    <label for="searchBy">Search By:</label>
+    <select id="searchBy">
+    <option value="title">Title</option>
+    <option value="genre">Genre</option>
+    <option value="both">Title and Genre</option>
+    </select>
+
+    <h2>The count of movies</h2>
+    <ul id="count"></ul>
+    </body>
+</html>
